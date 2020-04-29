@@ -1,0 +1,83 @@
+
+/***** 
+    Styles for the Implicit-Association-Test custom question theme
+    Copyright (C) 2020 - Tony Partner (http://partnersurveys.com)
+    Licensed MIT, GPL
+    Version - 1.0
+    Create date - 29/04/2020
+*****/
+
+.iat-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	height: 300px;
+	margin: 0 auto 10px auto;
+	color: #D0DBE5;
+	background-color: #2C3E50;
+	font-size: 21px;
+}
+
+.iat-left-label {
+	float: left;
+	padding: 10px;
+}
+
+.iat-right-label {
+	float: right;
+	padding: 10px;
+}
+
+.iat-word {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	text-align: center;
+	font-size: 36px;
+	color: #C4D1DE;
+}
+
+.iat-word.done {
+	color: #C4D1DE;
+}
+
+.iat-instructions {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.iat-mobile-button-wrapper {
+	display: none;
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 36px;
+}
+
+.iat-button {
+	float: left;
+	margin: 20px;
+	width: 100px;
+	padding: 2px 0 5px 0;
+	border: 5px solid #233140;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: normal;
+	cursor: pointer;
+}
+
+.iat-left-button {
+	float: left;
+}
+
+.iat-right-button {
+	float: right;
+}
+

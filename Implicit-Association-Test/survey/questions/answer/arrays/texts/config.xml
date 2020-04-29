@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    A customization of the array-texts question template to insert an Implicit Association Test (IAT) interface.
+-->
+
+<config>
+    <metadata>
+        <name>Implicit-Association-Test</name>
+        <type>question_theme</type>
+        <title>Implicit Association Test (IAT)</title>
+        <creationDate>29/04/2020</creationDate>
+        <author>Tony Partner</author>
+        <authorEmail>tpartner@partnersurveys.com</authorEmail>
+        <authorUrl>http://partnersurveys.com</authorUrl>
+        <license>GNU General Public License version 2 or later</license>
+        <version>1.0</version>
+        <apiVersion>1</apiVersion>
+        <description>An Implicit Association Test (IAT) type question.</description>
+				
+        <questionType>;</questionType>
+        <group>Arrays</group>
+        <answerscales>0</answerscales>
+        <hasdefaultvalues>0</hasdefaultvalues>
+        <assessable>0</assessable>
+        <class>array-multi-flexi-text</class>
+    </metadata>
+
+    <!--
+        Here the list of the css/js files to load.
+        Any file here will be loaded via the asset manager (when in config.php debug = 0)
+    -->
+    <files>
+        <css>
+            <filename>css/iat.css</filename>
+        </css>
+        <js>
+            <filename>scripts/iat.js</filename>
+        </js>
+		<preview>
+			<filename>/images/iat_1.png</filename>
+		</preview>
+    </files>
+
+    <custom_attributes>
+        <!-- New attributes -->
+        <attribute>
+            <name>iat_left_term</name>
+            <category>Custom options</category>
+            <sortorder>0</sortorder>
+            <inputtype>text</inputtype>
+            <default>...</default>
+            <help>The left association term.</help>
+            <caption>Left association term</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_right_term</name>
+            <category>Custom options</category>
+            <sortorder>1</sortorder>
+            <inputtype>text</inputtype>
+            <default>...</default>
+            <help>The right association term.</help>
+            <caption>Right association term</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_instruction_text</name>
+            <category>Custom options</category>
+            <sortorder>2</sortorder>
+            <inputtype>text</inputtype>
+            <default>...</default>
+            <help>Instructional text displayed at the bottom of the IAT interface.</help>
+            <caption>Instructional text</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_finish_text</name>
+            <category>Custom options</category>
+            <sortorder>3</sortorder>
+            <inputtype>text</inputtype>
+            <default>...</default>
+            <help>Text displayed when the IAT sequence is finished.</help>
+            <caption>Finished text</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_left_button_text</name>
+            <category>Custom options</category>
+            <sortorder>4</sortorder>
+            <inputtype>text</inputtype>
+            <default>E</default>
+            <help>The left button text on mobile devices.</help>
+            <caption>Left button text (mobile)</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_right_button_text</name>
+            <category>Custom options</category>
+            <sortorder>5</sortorder>
+            <inputtype>text</inputtype>
+            <default>I</default>
+            <help>The right button text on mobile devices.</help>
+            <caption>Right button text (mobile)</caption>
+            <i18n>hr</i18n>
+        </attribute>
+        <attribute>
+            <name>iat_show_answers</name>
+            <category>Custom options</category>
+            <sortorder>6</sortorder>
+            <inputtype>buttongroup</inputtype>
+            <options>
+                <yes>Yes</yes>
+                <no>No</no>
+            </options>
+            <default>no</default>
+            <help>Show the answers for testing.</help>
+            <caption>Show answers</caption>
+        </attribute>
+        
+        <!-- Hide some core attributes -->
+        <attribute>
+            <name>repeat_headings</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>input_size</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>answer_width</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>maximum_chars</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>min_answers</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>max_answers</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>array_filter_style</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>numbers_only</name>
+            <category>Other</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>show_totals</name>
+            <category>Other</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>show_grand_total</name>
+            <category>Other</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+    </custom_attributes>
+
+    <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
+    <engine>
+        <load_core_css>true</load_core_css>
+        <load_core_js>true</load_core_js>
+        <show_as_template>true</show_as_template>
+        <show_as_question_type>true</show_as_question_type>
+    </engine>
+</config>
